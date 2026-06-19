@@ -43,11 +43,11 @@ int main(int argc, char *argv[]){
 
     printf("#ifndef PNG_%s_H\n",name);
     printf("#define PNG_%s_H\n",name);
-    printf("size_t %s_width = %d\n",name,width);
-    printf("size_t %s_height = %d\n",name,height);
+    printf("size_t %s_width = %d;\n",name,width);
+    printf("size_t %s_height = %d;\n",name,height);
     printf("uint32_t %s_data[] = {",name);
     for(size_t i=0; i<(size_t)(width*height);i++){
-        printf("0x%x, ",data[i]);
+        // printf("0x%x, ",data[i]);
     }
 
     printf("};\n");
