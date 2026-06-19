@@ -2,12 +2,13 @@
 
 CFLAGS= -Wall -Wextra -g -std=c99 -pedantic -Ithird_party_lib 
 LDLIBS = -lm
+OBJS= main.c time_parse.c timer.c
 .PHONY: all
 all: main png2c penger_walk_sheet.h
 
 
-main: main.c
-	$(CC) $(CFLAGS) -o main main.c $(LDLIBS)
+main: $(OBJS)
+	$(CC) $(CFLAGS) -o main $(OBJS) $(LDLIBS)
 
 
 png2c: png2c.c
