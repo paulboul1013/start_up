@@ -51,7 +51,7 @@ int main(int argc, char *argv[]){
     }
 
     printf("};\n");
-    printf("endif // PNG_%s_H\n",name);
+    printf("#endif // PNG_%s_H\n",name);
 
     printf("\n");
     return 0;
