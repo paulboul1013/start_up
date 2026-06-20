@@ -2,3 +2,7 @@ main
 png2c
 *.png
 *.o
+docs/
+tutorial/
+digits.h
+penger_walk_sheet.h
